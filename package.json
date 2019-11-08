@@ -9,7 +9,6 @@
     "@opam/ctypes": "^0.15.1",
     "@opam/ctypes-foreign": "^0.4.0",
     "@opam/dune": "^1.11.0",
-    "@opam/ppx_inline_test": "v0.12.0",
     "ocaml": "^4.6.0"
   },
   "devDependencies": {

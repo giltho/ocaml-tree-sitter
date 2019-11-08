@@ -1,7 +1,4 @@
 (library
  (public_name tree_sitter)
- (inline_tests)
  (name tree_sitter)
- (libraries ctypes.foreign)
- (preprocess
-  (pps ppx_inline_test)))
+ (libraries ctypes.foreign))
