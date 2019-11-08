@@ -1,7 +1,10 @@
 {
   "name": "ocaml_tree_sitter",
   "version": "0.0.0",
-  "esy": { "build": [ "dune build -p #{self.name}" ], "buildsInSource": "_build" },
+  "esy": {
+    "build": [ "dune build -p #{self.name}" ],
+    "buildsInSource": "_build"
+  },
   "dependencies": {
     "@opam/ctypes": "^0.15.1",
     "@opam/ctypes-foreign": "^0.4.0",
@@ -9,5 +12,11 @@
     "@opam/ppx_inline_test": "v0.12.0",
     "ocaml": "^4.6.0"
   },
-  "devDependencies": { "ocaml": "^4.6.0", "@opam/utop": "*" }
+  "devDependencies": {
+    "@opam/cmitomli": "1.0.0",
+    "ocaml": "^4.6.0",
+    "@opam/utop": "*",
+    "@opam/ocamlformat": "0.12"
+  },
+  "scripts": { "fmt": "dune build @fmt --auto-promote" }
 }
