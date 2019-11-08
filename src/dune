@@ -1,7 +1,7 @@
 (library
- (public_name ocaml_tree_sitter)
+ (public_name tree_sitter)
  (inline_tests)
- (name ocaml_tree_sitter)
+ (name tree_sitter)
  (libraries ctypes.foreign)
  (preprocess
   (pps ppx_inline_test)))
