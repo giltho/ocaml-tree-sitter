@@ -1,4 +1,5 @@
 (library
  (public_name tree_sitter)
  (name tree_sitter)
- (libraries ctypes.foreign))
+ (libraries ctypes.foreign)
+ (flags :standard -cclib -ltree-sitter -cclib -I%{env:TREESITTER_INCLUDE_PATH=} -cclib -I%{env:TREESITTER_LIB_PATH=} -cclib -L%{env:TREESITTER_LIB_PATH=}))
